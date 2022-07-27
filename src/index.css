@@ -24,7 +24,9 @@ header h1 {
     padding: 20px;
     background-color: rgba(228, 228, 228, 0.398);
 }
-
+.alert{
+    text-align: center;
+}
 .textBox{
     display: flex;
     flex-direction: row;
@@ -40,10 +42,11 @@ p{
     font-size: 20px;
 }
 .circle{
- height: 50%;
+ height: 30px;
+ width: 30px;
  margin: auto 3vw;
  background-color: #FB4570;
- border-radius: 90%;
+ border-radius: 100%;
  padding: 10px;
 }
 .check
@@ -58,3 +61,23 @@ p{
     font-size: 30px; 
 }
 
+
+.deleteBtn
+{
+    margin-left:0;
+    margin-left:8px;
+
+    justify-content: flex-end;
+    color:rgba(0, 0, 0);
+    background: none;
+    border: none;
+}
+
+.deleteBtn:hover{
+color: red;
+}
+
+.delAndStats
+{
+    display: flex;
+}

@@ -7,9 +7,8 @@ import NoteItem from './NoteItem'
 
 function TrueOrFalse({done}) {
     if(done===true)
-  return (
-    <AiOutlineCheck className='check'/>
-  )
+  return <AiOutlineCheck className='check'/>
+
   return <AiOutlineClose className='close'/>
 }
 

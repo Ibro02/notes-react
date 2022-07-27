@@ -1,28 +1,39 @@
 import React from 'react'
-import NoteData from '../data/NoteData'
 import TrueOrFalse from './TrueOrFalse'
 import PropTypes from 'prop-types'
 import {useState} from 'react'
+import {FaTimes} from 'react-icons/fa'
+import TextBox from './shared/TextBox'
 
-function NoteItem({item}) {
+function NoteItem({item,handleDelete}) {
+const [color, setColor] = useState('white')
 
   return (
-    <div className='textBox'>
+    <TextBox backgroundColor={color}>
       {/* {console.log(NoteData)} */}
       <div className="text">
       <p>{item.text}</p>
       </div>
+
+<div className='delAndStats'>
+
       <div className="circle">
       <TrueOrFalse done={item.done}/>
       </div>
-    </div>
+      <button className="deleteBtn" onClick={()=>handleDelete(item.id)}>
+            <FaTimes/>
+        </button>
+</div>
+
+    </TextBox>
   )
+
 }
 
 NoteItem.defaultProps={
-    text: "(There is no notes)",
-    done: false
-
+    text: "Note",
+    done: false,
+   color: 'white'
 }
 
 
