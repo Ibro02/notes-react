@@ -2,8 +2,7 @@ import React from 'react'
 import {useState} from 'react'
 import PropTypes from 'prop-types'
 
-function TextBox({children,backgroundColor}) {
-   console.log(backgroundColor);
+function TextBox({children,backgroundColor,done}) {
    const textBoxStyle =
 { 
     backgroundColor: backgroundColor,
@@ -11,10 +10,14 @@ function TextBox({children,backgroundColor}) {
 }
 
   return (
-    <div className='textBox' style={textBoxStyle}>
+    <div className='textBox' style={textBoxStyle} >
         {children}
     </div>
   )
 }
 
+TextBox.defaultProps = {
+  backgroundColor: 'white',
+  color: 'black',
+}
 export default TextBox

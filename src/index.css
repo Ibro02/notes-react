@@ -81,3 +81,120 @@ color: red;
 {
     display: flex;
 }
+
+.btn 
+{
+    cursor: pointer;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+   color: white; 
+
+}
+.btn-primary
+{
+   
+    background-color: #FF0833;
+
+    
+}
+
+.btn-primary:hover
+{
+    background-color: #ff7088;
+
+}
+
+.btn-secondary
+{
+   background-color: purple;
+}
+.btn-secondary:hover
+{
+   background-color: rgb(176, 30, 176);
+}
+
+.inputContainer{
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto 0;
+    flex-direction: column-reverse;
+
+}
+.inputContainer input{
+    font-size: 30px;
+    border-radius: 6px;
+    font-weight: 200;
+    border: 2px solid black;
+
+}
+.choose label
+{
+    background-color: none;
+}
+.choose
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+}
+.backGround
+{
+    display: flex;
+    background-color: #FB4570;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    justify-content: space-between;
+    
+
+}
+.backGround .isTrue
+{
+    cursor: pointer;
+    border-radius: 1px;
+    text-align: center;
+  
+}
+
+.backGround .check:hover
+{
+
+    color: rgb(66, 198, 66);
+
+}
+
+.backGround .close:hover
+{
+
+    color: rgb(246, 41, 41);
+
+}
+.backGround .isFalse
+{
+    text-align: center;
+cursor: pointer;
+
+}
+
+form{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+form .noteForm
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.formButton
+{
+display: flex;
+margin: 10px;
+    margin-left: 60px;
+}
